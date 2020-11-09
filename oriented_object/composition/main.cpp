@@ -1,4 +1,3 @@
-#include <iostream>
 #include "dog.cpp"
 
 int main()
@@ -7,8 +6,5 @@ int main()
 
   Dog dog(animal);
   dog.bark();
-
-  std::cout << dog.getInfo().getName() << std::endl;
-  std::cout << dog.getInfo().getBreed() << std::endl;
-  std::cout << dog.getInfo().getWeight() << std::endl;
+  dog.getInfo();
 }

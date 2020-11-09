@@ -3,39 +3,39 @@
 
 Animal::Animal() {}
 
-Animal::Animal(std::string _name, std::string _breed, float _weight)
+Animal::Animal(std::string name, std::string breed, float weight)
 {
-  name = _name;
-  breed = _breed;
-  weight = _weight;
+  m_name = name;
+  m_breed = breed;
+  m_weight = weight;
 }
 
-void Animal::setName(std::string _name)
+void Animal::setName(std::string name)
 {
-  name = _name;
+  m_name = name;
 }
 
 std::string Animal::getName()
 {
-  return name;
+  return m_name;
 }
 
-void Animal::setBreed(std::string _breed)
+void Animal::setBreed(std::string breed)
 {
-  breed = _breed;
+  m_breed = breed;
 }
 
 std::string Animal::getBreed()
 {
-  return breed;
+  return m_breed;
 }
 
-void Animal::setWeight(float _weight)
+void Animal::setWeight(float weight)
 {
-  weight = _weight;
+  m_weight = weight;
 }
 
 float Animal::getWeight()
 {
-  return weight;
+  return m_weight;
 }

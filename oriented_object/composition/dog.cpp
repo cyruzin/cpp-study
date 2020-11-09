@@ -1,9 +1,13 @@
 #include <iostream>
 #include "dog.hpp"
 
-Animal Dog::getInfo()
+Dog::Dog(Animal animal) : m_animal{animal} {}
+
+void Dog::getInfo()
 {
-  return animal;
+  std::cout << m_animal.getName() << std::endl;
+  std::cout << m_animal.getBreed() << std::endl;
+  std::cout << m_animal.getWeight() << std::endl;
 }
 
 void Dog::bark()

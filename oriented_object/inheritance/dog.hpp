@@ -5,10 +5,8 @@
 class Dog : public Animal
 {
 public:
-  Dog(std::string _name, std::string _breed, float _weight)
-      : Animal(_name, _breed, _weight)
-  {
-  }
+  Dog(std::string name, std::string breed, float weight)
+      : Animal(name, breed, weight) {}
   Dog();
   void bark();
 };

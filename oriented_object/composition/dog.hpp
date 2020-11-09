@@ -4,12 +4,11 @@
 
 class Dog
 {
-private:
-  Animal animal;
-
 public:
-  Dog(const Animal &_animal) : animal{_animal} {}
-  Dog();
-  Animal getInfo();
+  Dog(Animal animal);
+  void getInfo();
   void bark();
+
+private:
+  Animal m_animal;
 };

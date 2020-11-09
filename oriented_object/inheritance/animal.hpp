@@ -4,17 +4,17 @@
 
 class Animal
 {
-private:
-  std::string name, breed;
-  float weight;
-
 public:
   Animal();
-  Animal(std::string _name, std::string _breed, float _weight);
-  void setName(std::string _name);
+  Animal(std::string name, std::string breed, float weight);
+  void setName(std::string name);
   std::string getName();
-  void setBreed(std::string _breed);
+  void setBreed(std::string breed);
   std::string getBreed();
-  void setWeight(float _weight);
+  void setWeight(float weight);
   float getWeight();
+
+private:
+  std::string m_name, m_breed;
+  float m_weight;
 };
