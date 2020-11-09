@@ -1,7 +1,7 @@
 #include <iostream>
 #include "dog.h"
 
-Dog::Dog(Animal animal) : m_animal{animal} {}
+Dog::Dog(Animal animal) : m_animal(animal) {}
 
 void Dog::getInfo()
 {
