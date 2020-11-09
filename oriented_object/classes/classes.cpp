@@ -18,6 +18,4 @@ int main()
   Player player;
   std::cout << "Moving player..." << std::endl;
   player.Move(1, -1);
-
-  return 0;
 }
