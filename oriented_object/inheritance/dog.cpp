@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "dog.hpp"
+#include "dog.h"
 
 Dog::Dog() {}
 

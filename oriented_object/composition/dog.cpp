@@ -1,5 +1,5 @@
 #include <iostream>
-#include "dog.hpp"
+#include "dog.h"
 
 Dog::Dog(Animal animal) : m_animal{animal} {}
 

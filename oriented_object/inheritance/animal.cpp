@@ -1,5 +1,5 @@
 #include <string>
-#include "animal.hpp"
+#include "animal.h"
 
 Animal::Animal() {}
 
