@@ -14,9 +14,14 @@ int main()
   q[1] = 231;
   q[2] = 133;
   q[3] = 43;
+  q[4] = 899;
   q[5] = 55;
+  q[6] = 155; // auto realloc
 
-  std::cout << *q << std::endl;
+  for (int i = 0; i <= 6; i++)
+  {
+    std::cout << q[i] << std::endl;
+  }
 
   delete[] p; // cleanup
 }
