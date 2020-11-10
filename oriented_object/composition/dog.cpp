@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "dog.h"
 
 Dog::Dog(Animal animal) : m_animal(animal) {}
