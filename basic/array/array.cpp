@@ -13,6 +13,7 @@ int main()
 
   int i, j, num;
 
+  // multi dimensional array
   for (i = 0; i < HEIGHT; i++)
     for (j = 0; j < WIDTH; j++)
     {
