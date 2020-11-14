@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "calc_lib.h"
+#include "calc_lib.cpp"
 
 int main()
 {
