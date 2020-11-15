@@ -12,13 +12,16 @@ extern "C"
 #define CALC_LIB __declspec(dllexport)
 #endif
 
-  class Calc
+  namespace Calc
   {
-  public:
-    Calc();
-    int sum(int x, int y);
-    int multiply(int x, int y);
-  };
+    class Math
+    {
+    public:
+      Math();
+      int sum(int x, int y);
+      int multiply(int x, int y);
+    };
+  } // namespace Calc
 
 #ifdef __cplusplus
 }
