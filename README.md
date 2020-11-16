@@ -16,7 +16,7 @@ _C:\MinGW\bin_
 
 I think most of the distros comes with GCC pre installed.
 
-### OSX
+### macOS
 
 I don't care.
 

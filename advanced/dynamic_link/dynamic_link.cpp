@@ -1,13 +1,13 @@
 #include <iostream>
 
-#include "calc_lib.cpp"
+#include "calc.h"
 
 int main()
 {
-  Calc calc;
+  Calc::Math math;
 
-  std::cout << calc.sum(10, 10) << std::endl;
-  std::cout << calc.multiply(5, 5) << std::endl;
+  std::cout << math.sum(10, 10) << std::endl;
+  std::cout << math.multiply(5, 5) << std::endl;
 
   std::cin.get();
 }
