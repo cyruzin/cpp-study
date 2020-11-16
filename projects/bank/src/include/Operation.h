@@ -8,6 +8,7 @@ namespace Bank
   class Operation
   {
   public:
+    Operation();
     Operation(Account &account);
     bool setWithdraw(unsigned long int value);
     void setDeposit(unsigned long int value);

@@ -4,6 +4,8 @@
 
 using namespace Bank;
 
+Operation::Operation() {}
+
 Operation::Operation(Account &account) : m_account(account)
 {
   m_account = account;

@@ -14,6 +14,7 @@ namespace Bank
     std::string getName();
     void setPassword(std::string password);
     std::string getPassword();
+    bool validatePassword(std::string password);
     void setID(unsigned long id);
     unsigned long int getID();
     void setActive(bool active);
@@ -23,8 +24,7 @@ namespace Bank
     std::string m_name, m_password;
     bool m_active;
 
-    bool validatePassword(std::string password);
-    bool checkPassword(std::string);
+    bool checkPassword(std::string password);
   };
 
 } // namespace Bank

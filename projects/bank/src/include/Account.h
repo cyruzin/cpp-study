@@ -10,6 +10,7 @@ namespace Bank
   class Account
   {
   public:
+    Account();
     Account(User &user);
     void createAccount(User &user);
     void manageAccount(std::string name, std::string password);

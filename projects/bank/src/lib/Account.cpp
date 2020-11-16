@@ -4,11 +4,17 @@
 
 using namespace Bank;
 
+Account::Account()
+{
+  m_balance = 0;
+}
+
 Account::Account(User &user) : m_user(user)
 {
   m_branch = rand();
   m_checking_account = rand();
   m_user = user;
+  m_balance = 0;
 }
 
 void Account::createAccount(User &user)

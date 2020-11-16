@@ -3,21 +3,26 @@
 #include <string>
 #include <vector>
 
-#include "User.h"
-
+#include "Account.h"
+#include "Operation.h"
 namespace Bank
 {
-
   class App
   {
   public:
+    App();
+    App(Account &account);
     void init();
     void create();
-    void setUser(User &user);
-    int getUsersSize();
+    void manage();
+    void manageSub(int userID);
+    void destroy();
+    void setAccount(Account &account);
 
   private:
-    std::vector<User> m_userList;
+    Account m_account;
+
+    std::vector<Account> m_accountList;
   };
 
 } // namespace Bank
