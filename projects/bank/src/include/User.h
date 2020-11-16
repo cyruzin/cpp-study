@@ -17,12 +17,10 @@ namespace Bank
     bool validatePassword(std::string password);
     void setID(unsigned long id);
     unsigned long int getID();
-    void setActive(bool active);
 
   private:
     unsigned long int m_id;
     std::string m_name, m_password;
-    bool m_active;
 
     bool checkPassword(std::string password);
   };

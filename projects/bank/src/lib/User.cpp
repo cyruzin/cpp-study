@@ -66,8 +66,3 @@ bool User::checkPassword(std::string password)
 {
   return password == m_password;
 }
-
-void User::setActive(bool active)
-{
-  m_active = active;
-}
