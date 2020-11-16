@@ -11,6 +11,7 @@ namespace Bank
   public:
     App();
     App(Account &account);
+
     void init();
     void create();
     void manage();
