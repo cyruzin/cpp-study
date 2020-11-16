@@ -2,56 +2,58 @@
 
 #include "../include/Account.h"
 
-Bank::Account::Account(User &user) : m_user(user)
+using namespace Bank;
+
+Account::Account(User &user) : m_user(user)
 {
   m_branch = rand();
   m_checking_account = rand();
   m_user = user;
 }
 
-void Bank::Account::createAccount(User &user)
+void Account::createAccount(User &user)
 {
   m_user = user;
 }
 
-void Bank::Account::manageAccount(std::string name, std::string password)
+void Account::manageAccount(std::string name, std::string password)
 {
   m_user.setName(name);
   m_user.setPassword(password);
 }
 
-void Bank::Account::destroyAccount()
+void Account::destroyAccount()
 {
   m_user.setActive(false);
   m_status = true;
 }
 
-bool Bank::Account::getAccountStatus()
+bool Account::getAccountStatus()
 {
   return m_status;
 }
 
-void Bank::Account::setBalance(unsigned long balance)
+void Account::setBalance(unsigned long balance)
 {
   m_balance = balance;
 }
 
-unsigned long Bank::Account::getBalance()
+unsigned long Account::getBalance()
 {
   return m_balance;
 }
 
-unsigned long Bank::Account::getBranch()
+unsigned long Account::getBranch()
 {
   return m_branch;
 }
 
-unsigned long Bank::Account::getCheckingAccount()
+unsigned long Account::getCheckingAccount()
 {
   return m_checking_account;
 }
 
-Bank::User Bank::Account::userInfo()
+User Account::userInfo()
 {
   return m_user;
 }

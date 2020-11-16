@@ -9,7 +9,7 @@ namespace Bank
   {
   public:
     User();
-    User(unsigned long int id, std::string name, std::string password);
+    User(std::string name, std::string password);
     void setName(std::string name);
     std::string getName();
     void setPassword(std::string password);
