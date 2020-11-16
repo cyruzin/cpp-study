@@ -22,9 +22,9 @@ An object file is a computer file containing object code, that is, machine code 
 
 Static library is a collection of object files.
 
-**.a** - Linux static library.
-
 **.lib** - Windows static library.
+
+**.a** - Linux static library.
 
 ## Compiled Dynamic libraries
 
