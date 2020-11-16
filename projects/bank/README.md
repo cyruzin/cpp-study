@@ -2,7 +2,7 @@
 
 Simple banking application.
 
-# Install
+## Install
 
 Make sure you have G++ installed in your machine.
 
@@ -10,6 +10,24 @@ Make sure you have G++ installed in your machine.
   git@github.com:cyruzin/cpp-study.git
 
   cd projects/bank/src/
+```
 
+## Compile
+
+```sh
   g++ main.cpp ./lib/*.cpp -o main
+```
+
+## Run
+
+Windows:
+
+```sh
+  ./main.exe
+```
+
+Linux:
+
+```sh
+  ./main
 ```
