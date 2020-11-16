@@ -4,7 +4,6 @@
 #include <vector>
 
 #include "Account.h"
-#include "Operation.h"
 namespace Bank
 {
   class App
@@ -17,7 +16,7 @@ namespace Bank
     void manage();
     void manageSub(int userID);
     void destroy();
-    void setAccount(Account &account);
+    void setAccount(Account &account, std::vector<Account> &accountList);
     std::vector<Account> &getAccounts();
 
   private:

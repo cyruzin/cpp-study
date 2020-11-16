@@ -62,7 +62,7 @@ void App::create()
   }
 
   Account *account = new Account(*user);
-  setAccount(*account);
+  setAccount(*account, m_accountList);
 
   cout << "Account #" << account->userInfo().getID() << " created" << endl;
 
@@ -105,6 +105,7 @@ void App::manage()
 void App::manageSub(int userID)
 {
   int option;
+  double amount;
 
   cout << "1 - Display balance" << endl;
   cout << "2 - Deposit funds" << endl;
@@ -112,18 +113,44 @@ void App::manageSub(int userID)
   cout << "4 - Go to main menu" << endl;
   cin >> option;
 
-  // TODO: Implement bank operations
-
   switch (option)
   {
   case 1:
-    cout << "Balance" << endl;
+    for (auto &currentAccount : m_accountList)
+    {
+      if (currentAccount.userInfo().getID() == userID)
+      {
+        cout.precision(2);
+        cout << "Account balance: $" << fixed << currentAccount.getBalance() << endl;
+      }
+    }
+    manageSub(userID);
     break;
   case 2:
-    cout << "Deposit" << endl;
+    cout << "Deposit amount: $";
+    cin >> amount;
+    for (auto &currentAccount : m_accountList)
+    {
+      if (currentAccount.userInfo().getID() == userID)
+      {
+        currentAccount.setDeposit(amount);
+        cout << "Depositing $" << amount << "..." << endl;
+      }
+    }
+    manageSub(userID);
     break;
   case 3:
-    cout << "Withdraw" << endl;
+    cout << "Withdraw amount: $";
+    cin >> amount;
+    for (auto &currentAccount : m_accountList)
+    {
+      if (currentAccount.userInfo().getID() == userID)
+      {
+        if (currentAccount.setWithdraw(amount))
+          cout << "Withdrawing $" << amount << "..." << endl;
+      }
+    }
+    manageSub(userID);
     break;
   case 4:
     init();
@@ -170,9 +197,9 @@ void App::destroy()
   return init();
 }
 
-void App::setAccount(Account &account)
+void App::setAccount(Account &account, std::vector<Account> &accountList)
 {
-  m_accountList.push_back(account);
+  accountList.push_back(account);
 }
 
 vector<Account> &App::getAccounts()
