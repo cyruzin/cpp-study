@@ -27,16 +27,26 @@ User Account::userInfo()
 
 bool Account::setWithdraw(double value)
 {
-  if (m_balance < value)
+  double balanceWithFee = m_balance - 2; // withdraw fee
+
+  if (balanceWithFee < value) // preventing negatives value
   {
     std::cout << "Failed to withdraw..." << std::endl;
     return false;
   }
-  m_balance = m_balance -= value;
+  m_balance = balanceWithFee - value;
   return true;
 }
 
 void Account::setDeposit(double value)
 {
-  m_balance = m_balance += value;
+  double newValue = value; // preventig mutation
+
+  if (value >= 250)
+  {
+    double bonus = (value / 250) * 5; // calculating bonus
+    newValue += bonus;
+  }
+
+  m_balance += newValue;
 }

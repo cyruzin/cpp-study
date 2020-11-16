@@ -64,7 +64,7 @@ void App::create()
   Account *account = new Account(*user);
   setAccount(*account, m_accountList);
 
-  cout << "Account #" << account->userInfo().getID() << " created" << endl;
+  cout << "Create account #" << account->userInfo().getID() << endl;
 
   return init();
 }
@@ -86,7 +86,7 @@ void App::manage()
 
   if (!(it != m_accountList.end()))
   {
-    cout << "Account not found" << endl;
+    cout << "Account #" << accountID << " not found" << endl;
     return manage();
   }
 
