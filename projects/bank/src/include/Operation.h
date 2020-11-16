@@ -16,8 +16,6 @@ namespace Bank
 
   private:
     Account m_account;
-
-    bool checkAccount();
   };
 
 } // namespace Bank

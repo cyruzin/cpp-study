@@ -10,9 +10,6 @@ User::User() {}
 
 User::User(std::string name, std::string password)
 {
-  if (!validatePassword(password))
-    return;
-
   m_id = rand();
   m_name = name;
   m_password = password;
@@ -52,13 +49,13 @@ bool User::validatePassword(std::string password)
 {
   if (password.length() < 8)
   {
-    std::cout << "Password is to short, min 8 characters" << std::endl;
+    std::cout << "Password is too short, min 8 characters" << std::endl;
     return false;
   }
 
   if (password.length() > 32)
   {
-    std::cout << "Password is to long, max 32 characters" << std::endl;
+    std::cout << "Password is too long, max 32 characters" << std::endl;
     return false;
   }
 

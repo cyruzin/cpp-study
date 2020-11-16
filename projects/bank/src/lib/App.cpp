@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <vector>
 
 #include "../include/App.h"
 
@@ -54,10 +55,16 @@ void App::create()
   cin >> password;
 
   User *user = new User(name, password);
+
+  if (!user->validatePassword(password))
+  {
+    return init();
+  }
+
   Account *account = new Account(*user);
   setAccount(*account);
 
-  cout << "User ID: " << account->userInfo().getID() << endl;
+  cout << "Account #" << account->userInfo().getID() << " created" << endl;
 
   return init();
 }
@@ -110,16 +117,13 @@ void App::manageSub(int userID)
   switch (option)
   {
   case 1:
-    cout << "Balance: 0" << endl;
-    manageSub(userID);
+    cout << "Balance" << endl;
     break;
   case 2:
-    cout << "Depositing 100..." << endl;
-    manageSub(userID);
+    cout << "Deposit" << endl;
     break;
   case 3:
-    cout << "Withdrawing 75..." << endl;
-    manageSub(userID);
+    cout << "Withdraw" << endl;
     break;
   case 4:
     init();
@@ -128,11 +132,6 @@ void App::manageSub(int userID)
     init();
     break;
   }
-}
-
-void App::setAccount(Account &account)
-{
-  m_accountList.push_back(account);
 }
 
 void App::destroy()
@@ -169,4 +168,14 @@ void App::destroy()
   m_accountList.erase(m_accountList.begin() + index);
   cout << "Destroying account..." << endl;
   return init();
+}
+
+void App::setAccount(Account &account)
+{
+  m_accountList.push_back(account);
+}
+
+vector<Account> &App::getAccounts()
+{
+  return m_accountList;
 }

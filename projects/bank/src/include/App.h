@@ -18,6 +18,7 @@ namespace Bank
     void manageSub(int userID);
     void destroy();
     void setAccount(Account &account);
+    std::vector<Account> &getAccounts();
 
   private:
     Account m_account;
