@@ -1,2 +1,2 @@
-g++ -c -BUILD_DLL calc_lib.cpp
-g++ -shared -o calc_lib.dll calc_lib.o -Wl,--out-implib,libcalc_lib.a
+g++ -c -BUILD_DLL calc.cpp
+g++ -shared -o calc.dll calc.o -Wl,--out-implib,libcalc.a

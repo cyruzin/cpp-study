@@ -1,13 +1,15 @@
 #include "calc.h"
 
-Calc::Math::Math() {}
+using namespace Calc;
 
-int Calc::Math::sum(int x, int y)
+Math::Math() {}
+
+int Math::sum(int x, int y)
 {
   return x + y;
 }
 
-int Calc::Math::multiply(int x, int y)
+int Math::multiply(int x, int y)
 {
   return x * y;
 }
