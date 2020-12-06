@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "./overload.h"
+#include "overload.h"
 
 using namespace std;
 
