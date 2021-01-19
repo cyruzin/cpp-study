@@ -10,7 +10,14 @@ const char *CURRENT_PLATFORM = "another OS";
 #define DEV "Cyro Dubeux"
 #endif
 
+// Some predefined macros
+//
+// __cplusplus
+// __DATE__
+// _TIME__
+
 int main()
 {
   std::cout << DEV << " is developing in " << CURRENT_PLATFORM << std::endl;
+  std::cout << "On " << __DATE__ << " " << __TIME__ << std::endl;
 }
