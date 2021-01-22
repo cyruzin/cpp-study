@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
-#include <cstdlib>
-
-#include "../include/User.h"
+#include "../include/All.hpp"
 
 using namespace Bank;
 

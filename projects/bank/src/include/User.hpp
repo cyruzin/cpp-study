@@ -1,6 +1,4 @@
-#pragma once
-
-#include <string>
+#include "All.hpp"
 
 namespace Bank
 {

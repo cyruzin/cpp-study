@@ -1,6 +1,4 @@
-#include <iostream>
-
-#include "../include/Account.h"
+#include "../include/All.hpp"
 
 using namespace Bank;
 

@@ -1,9 +1,4 @@
-#pragma once
-
-#include <string>
-#include <vector>
-
-#include "Account.h"
+#include "All.hpp"
 
 namespace Bank
 {
@@ -16,7 +11,7 @@ namespace Bank
     void init();
     void create();
     void manage();
-    void manageSub(int userID);
+    void manageSub(const int userID);
     void destroy();
     void setAccount(Account &account, std::vector<Account> &accountList);
     std::vector<Account> &getAccounts();

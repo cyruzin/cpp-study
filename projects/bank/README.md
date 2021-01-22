@@ -12,6 +12,12 @@ Make sure you have G++ installed in your machine.
   cd projects/bank/src/
 ```
 
+## Precompile the headers
+
+```sh
+  g++ -std=c++14 All.hpp
+```
+
 ## Compile
 
 ```sh
@@ -22,7 +28,7 @@ Make sure you have G++ installed in your machine.
 
 Windows:
 
-```sh
+```exe
   ./main.exe
 ```
 

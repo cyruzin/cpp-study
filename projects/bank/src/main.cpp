@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-
-#include "include/App.h"
+#include "include/All.hpp"
 
 int main()
 {

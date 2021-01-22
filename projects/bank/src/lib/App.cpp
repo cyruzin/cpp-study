@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
-
-#include "../include/App.h"
+#include "../include/All.hpp"
 
 using namespace std;
 using namespace Bank;
@@ -54,14 +49,15 @@ void App::create()
   cout << "New password: " << endl;
   cin >> password;
 
-  User *user = new User(name, password);
+  auto user = std::make_unique<User>(name, password);
 
   if (!user->validatePassword(password))
   {
     return init();
   }
 
-  Account *account = new Account(*user);
+  auto account = std::make_unique<Account>(*user);
+
   setAccount(*account, m_accountList);
 
   cout << "Create account #" << account->userInfo().getID() << endl;
@@ -102,7 +98,7 @@ void App::manage()
   return manageSub(accountID);
 }
 
-void App::manageSub(int userID)
+void App::manageSub(const int userID)
 {
   int option;
   double amount;

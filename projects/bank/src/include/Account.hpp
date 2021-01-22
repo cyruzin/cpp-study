@@ -1,8 +1,4 @@
-#pragma once
-
-#include <string>
-
-#include "User.h"
+#include "All.hpp"
 
 namespace Bank
 {
@@ -17,7 +13,7 @@ namespace Bank
     bool setWithdraw(double value);
     double getBalance();
 
-    Bank::User userInfo();
+    User userInfo();
 
   private:
     double m_balance;
