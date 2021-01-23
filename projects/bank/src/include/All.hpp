@@ -9,7 +9,7 @@
 #include <algorithm>
 #include <memory>
 
-// lib (the order is important)
+// lib
 #include "./User.hpp"
 #include "./Account.hpp"
 #include "./App.hpp"
