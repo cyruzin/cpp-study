@@ -6,7 +6,7 @@ namespace Bank
   {
   public:
     App();
-    App(Account &account);
+    ~App();
 
     void init();
     void create();

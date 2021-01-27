@@ -13,6 +13,8 @@ Account::Account(User &user) : m_user(user)
   m_balance = 0;
 }
 
+Account::~Account() {}
+
 double Account::getBalance()
 {
   return m_balance;

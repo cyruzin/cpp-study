@@ -11,6 +11,8 @@ User::User(std::string name, std::string password)
   m_password = password;
 }
 
+User::~User() {}
+
 void User::setID(unsigned long id)
 {
   m_id = id;

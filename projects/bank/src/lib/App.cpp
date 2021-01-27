@@ -4,8 +4,7 @@ using namespace std;
 using namespace Bank;
 
 App::App() {}
-
-App::App(Account &account) : m_account(account) {}
+App::~App() {}
 
 void App::init()
 {

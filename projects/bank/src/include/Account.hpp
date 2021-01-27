@@ -8,6 +8,7 @@ namespace Bank
   public:
     Account();
     Account(User &user);
+    ~Account();
 
     void setDeposit(double value);
     bool setWithdraw(double value);

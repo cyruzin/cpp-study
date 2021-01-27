@@ -8,6 +8,8 @@ namespace Bank
   public:
     User();
     User(std::string name, std::string password);
+    ~User();
+
     void setName(std::string name);
     std::string getName();
     void setPassword(std::string password);
