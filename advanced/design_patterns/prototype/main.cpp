@@ -7,7 +7,7 @@
 // Intent: Lets you copy existing objects without making your code dependent on
 // their classes.
 
-enum Type
+enum class Type
 {
   PROTOTYPE_1 = 0,
   PROTOTYPE_2
