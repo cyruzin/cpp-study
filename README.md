@@ -4,6 +4,8 @@ C++ repo for study purposes.
 
 ## Install
 
+I'm using GCC compiler.
+
 ### Windows
 
 To install GCC on Windows, head to [MinGW website](http://www.mingw.org/) and download the MinGW Installation Manager (mingw-get). Then check the package **mingw32-gcc-g++-bin** on the list and click on "Apply Changes" to install.
