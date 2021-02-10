@@ -18,7 +18,7 @@ I think most of the distros comes with GCC pre installed.
 
 ### macOS
 
-I don't care.
+Buy one for me and I'll tell you how to do it.
 
 ## Checking installation
 
