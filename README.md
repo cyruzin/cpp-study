@@ -4,11 +4,11 @@ C++ repo for study purposes.
 
 ## Install
 
-I'm using GCC compiler.
+I'm using GCC/G++ compiler.
 
 ### Windows
 
-To install GCC on Windows, head to [MinGW website](http://www.mingw.org/) and download the MinGW Installation Manager (mingw-get). Then check the package **mingw32-gcc-g++-bin** on the list and click on "Apply Changes" to install.
+To install GCC/G++ on Windows, head to [MinGW website](http://www.mingw.org/) and download the MinGW Installation Manager (mingw-get). Then check the package **mingw32-gcc-g++-bin** on the list and click on "Apply Changes" to install.
 
 Add the binary path to the system variables.
 
@@ -16,7 +16,7 @@ _C:\MinGW\bin_
 
 ### Linux
 
-I think most of the distros comes with GCC pre installed.
+I think most of the distros comes with GCC/G++ pre installed.
 
 ### macOS
 
