@@ -10,7 +10,11 @@ I'm using GCC/G++ compiler.
 
 To install GCC/G++ on Windows, head to [MinGW website](http://www.mingw.org/) and download the MinGW Installation Manager (mingw-get). Then check the package **mingw32-gcc-g++-bin** on the list and click on "Apply Changes" to install.
 
-Add the binary path to the system variables.
+Optional:
+
+Install GDB for debuggin: **mingw32-gdb-bin**.
+
+Then add the binary path to the system variables.
 
 _C:\MinGW\bin_
 
