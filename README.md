@@ -12,7 +12,7 @@ To install GCC/G++ on Windows, head to [MinGW website](http://www.mingw.org/) an
 
 Optional:
 
-Install GDB for debuggin: **mingw32-gdb-bin**.
+Install GDB for debugging: **mingw32-gdb-bin**.
 
 Then add the binary path to the system variables.
 
