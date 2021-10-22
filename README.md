@@ -24,7 +24,7 @@ I think most of the distros comes with GCC/G++ pre installed.
 
 ### macOS
 
-Buy one for me and I'll tell you how to do it.
+Just run: brew install gcc
 
 ## Checking installation
 
